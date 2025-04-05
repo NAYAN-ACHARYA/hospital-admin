@@ -18,7 +18,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/login",
+          "https://hospital-admin-ht2k.onrender.com/api/v1/user/login",
           { email, password, confirmPassword, role: "Admin" },
           {
             withCredentials: true,
@@ -73,7 +73,7 @@ const Login = () => {
           <div style={{ justifyContent: "center", alignItems: "center" }}>
           <button
   type="button"
-  onClick={() => (window.location.href = "http://localhost:5173/login")}
+  onClick={() => (window.location.href = "https://hospital-patient.onrender.com/login")}
 >
   Go to Patient Login
 </button>
